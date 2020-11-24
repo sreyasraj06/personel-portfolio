@@ -1,0 +1,154 @@
+<html>
+<head>
+  <title>Registeration Form</title><style>
+#main{
+  background-image:url('https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+  background-repeat:no-repeat;
+  background-size:cover;
+ 
+}
+#title{
+  text-align:center;
+  color:white;
+  background-color:black;
+  font-family:monospace;
+  
+}
+#description{
+  font-size:28px;
+  text-align:center;
+  font-width:20px;
+}
+#survey-form{
+  background-color:black;
+  background-size:cover;
+  width:45%;
+  color:white;
+  text-align:justify;
+  font-family:sans-serif;
+  padding-left:50px;
+  padding:20px;
+  border-radius:25px;
+
+}
+#name{
+  width:100%;
+  padding:20px;
+  font-size:20px;
+  border-radius:25px;
+}
+#email{
+   width:100%;
+  padding:20px;
+  font-size:20px;
+  border-radius:25px;
+  
+}
+#number{
+  width:100%;
+  padding:20px;
+  font-size:20px;
+  border-radius:25px;
+}
+#name-label{
+  font-size:10px;
+}
+#email-label{
+  font-size:10px;
+}
+#number-label{
+  font-size:10px;
+}
+
+#dropdown{
+  width:97%;
+  padding:20px;
+  font-size:20px;
+  border-radius:25px;
+}
+
+#size{
+  font-size:20px;
+}
+#textarea{
+  width:90%;
+  padding:20px;
+  font-size:20px;
+  
+}
+#submit{
+  width:30%;
+  padding:10px;
+  border-radius:25px;
+  background-color:green;
+  font-size:30px;
+  
+}
+</style>
+</head>
+<body>
+
+<div id="main">
+  <h1 id="title">PERSONEL DETAILS
+</h1>
+  <p id="description"><b>hOLA! LET ME KNOW MORE ABT YOU :)
+</b></p>
+  <center>
+  <form id="survey-form">
+    <h1> NAME</h1>
+      <label id="name-label">
+        <input id="name"  type="text"  required  placeholder="Enter your name"></label>
+    <h1>EMAIL</h1>
+    <label id="email-label">
+    <input id="email" type="email"  required placeholder="Enter your email" minlength:8; maxlength:20; size:22;></label>
+    
+    <h1>PHONE NUMBER</h1>
+    <label id="number-label">
+    <input id="number"  type="number" type="range" min=0; max=10; placeholder="Enter your phone number"></label>
+      <h1>DEPARTMENT OF STUDY</h1><label for="teams">
+ 
+  <select id="dropdown"  name="teams">
+    <option value="Mechanical Department">Mechanical Department</option>
+    <option value="Information Technology ">Information Technology </option>
+    <option value="Civil Department">Civil Department</option>
+    <option value="ECE Department">ECE Department</option>
+      </select></label>
+      <h1>YEAR OF GRADUATON</h1>
+     <label for="yes" id="size">
+       <input id="yes" value="yes" type="radio" name="reccomendation">2021</label><br>
+      <label for="no" id="size">
+       <input id="no" value="no" type="radio" name="reccomendation">2022</label><br>
+      <label for="notsure" id="size">
+       <input id="notsure" value="notsure" type="radio" name="reccomendation">2023</label>
+      <h1>SUBJECT YOU LIKE THE MOST</h1>
+    <label for="workshops">
+ 
+  <select id="dropdown"  name="workshop">
+    <option value="ai">Artificial Intelligence</option>
+    <option value="rb">Robotics</option></select></label> 
+      <h1>DEPARTMENTS OF OUR COLLEGE YOU ARE IMPRESSED WITH OTHER THAN YOUR'S</h1>
+     <label for="me" id="size">
+       <input id="me" value="me" type="checkbox" name="reccomendation">Mechanical Department</label><br>
+      <label for="it" id="size">
+       <input id="it" value="it" type="checkbox" name="reccomendation">Information Technology</label><br>
+      <label for="ce" id="size">
+       <input id="ce" value="ce" type="checkbox" name="reccomendation">Civil Department</label><br>
+     
+       <label for="ec" id="size">
+       <input id="ec" value="ec" type="checkbox" name="reccomendation">ECE Department</label>
+    
+      <h1>Any Comments?</h1>
+      <label>
+   <textarea id="textarea"  type="text"  required  placeholder="Enter your comments here"></textarea></label><br><br>
+    <button id="submit" type="submit"><b>Submit</b></button>
+    
+   
+   
+  
+    
+    
+    </form>  
+</div>
+
+</body>
+</html>
